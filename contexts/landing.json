@@ -24,7 +24,7 @@
 		{
 			"title": "Fully Responsive",
 			"description": "This theme will look great on any device, no matter the size!",
-			"icon": "icon-screen-desktop"
+			"icon": ".icon-screen-desktop"
 		},
 		{
 			"title": "Bootstrap 4 Ready",
