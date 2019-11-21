@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
- {%load static%}
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,7 +22,6 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url({% static resume_template/img/bg-masthead.jpg %}) no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
