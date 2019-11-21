@@ -14,7 +14,7 @@
 
 	"masthead":
 	{
-		"img": "resume_template/img/bg-masthead.jpg",
+		"img": "landing_template/img/bg-masthead.jpg",
 		"title": "Build a landing page for your business or project and generate more leads!",
 		"email_text": "Enter your email...",
 		"submit_btn": "Sign up!"
