@@ -82,7 +82,7 @@
     <div class="container-fluid p-0">
       {% for display in showcase %}
       <div class="row no-gutters">
-        <div class="{{ display.class }}" style="background-image: url('{% static "{{ display.img }}" %}')";></div>
+        <div class="{{ display.class }}" style="background-image: url('{% static "{{ display.img }}" %}');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>{{ display.title }}</h2>
           <p class="lead mb-0">{{ display.description }}</p>
