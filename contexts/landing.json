@@ -1,0 +1,124 @@
+{
+	"page":
+	{
+		"title": "Landing Page - Start Bootstrap Theme",
+		"author": "",
+		"description": ""
+	},
+
+	"nav_bar":
+	{
+		"title": "Start Bootstrap",
+		"sign_in": "Sign In"
+	},
+
+	"masthead":
+	{
+		"title": "Build a landing page for your business or project and generate more leads!",
+		"email_text": "Enter your email...",
+		"submit_btn": "Sign up!"
+	},
+
+	"features":[
+		{
+			"title": "Fully Responsive",
+			"description": "This theme will look great on any device, no matter the size!",
+			"icon": "icon-screen-desktop"
+		},
+		{
+			"title": "Bootstrap 4 Ready",
+			"description": "Featuring the latest build of the new Bootstrap 4 framework!",
+			"icon": "icon-layers"
+		},
+		{
+			"title": "Easy to Use",
+			"description": "Ready to use with your own content, or customize the source files!",
+			"icon": "icon-check"
+		}
+	],
+
+	"showcase":[
+		{
+			"class": "col-lg-6 order-lg-2 text-white showcase-img",
+			"img": "img/bg-showcase-1.jpg",
+			"title": "Fully Responsive Design",
+			"description": "When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!"
+		},
+		{
+			"class": "col-lg-6 text-white showcase-img",
+			"img": "img/bg-showcase-2.jpg",
+			"title": "Updated For Bootstrap 4",
+			"description": "Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!"
+		},
+		{
+			"class": "col-lg-6 order-lg-2 text-white showcase-img",
+			"img": "img/bg-showcase-3.jpg",
+			"title": "Easy to Use & Customize",
+			"description": "Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!"
+		}
+	],
+
+	"testimonial_title": "What people are saying...",
+
+	"testimonials":[
+		{
+			"img": "img/testimonials-1.jpg",
+			"name": "Margaret E.",
+			"quote": "\"This is fantastic! Thanks so much guys!\""
+		},
+		{
+			"img": "img/testimonials-2.jpg",
+			"name": "Fred S.",
+			"quote": "\"Bootstrap is amazing. I've been using it to create lots of super nice landing pages.\""
+		},
+		{
+			"img": "img/testimonials-3.jpg",
+			"name": "Sarah W.",
+			"quote": "\"Thanks so much for making these free resources available to us!\""
+		}
+	],
+
+	"call_to_action":
+	{
+		"title": "Ready to get started? Sign up now!",
+		"email_text": "Enter your email...",
+		"submit_btn": "Sign up!"
+	},
+
+	"footer":[
+		{
+			"name": "About",
+			"href": "#",
+		},
+		{
+			"name": "Contact",
+			"href": "#",
+		},
+		{
+			"name": "Terms of Use",
+			"href": "#",
+		},
+		{
+			"name": "Privacy Policy",
+			"href": "#",
+		}
+	],
+
+	"footer_text": "&copy; Your Website 2019. All Rights Reserved.",
+
+	"footer_icons":[
+		{
+			"name": "fa-facebook",
+			"href": "#"
+		},
+		{
+			"name": "fa-twitter-square",
+			"href": "#"
+		},
+		{
+			"name": "fa-instagram",
+			"href": "#"
+		}
+	]
+
+}
