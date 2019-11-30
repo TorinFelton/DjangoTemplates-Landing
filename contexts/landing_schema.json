@@ -1,0 +1,445 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "DjangoTemplates-Landing/contexts/landing_schema.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "page",
+    "nav_bar",
+    "masthead",
+    "features",
+    "showcase",
+    "testimonial_title",
+    "testimonials",
+    "call_to_action",
+    "footer",
+    "footer_text",
+    "footer_icons"
+  ],
+  "properties": {
+    "page": {
+      "$id": "#/properties/page",
+      "type": "object",
+      "title": "The Page Schema",
+      "required": [
+        "title",
+        "author",
+        "description"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/page/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Landing Page - Start Bootstrap Theme"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "author": {
+          "$id": "#/properties/page/properties/author",
+          "type": "string",
+          "title": "The Author Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "$id": "#/properties/page/properties/description",
+          "type": "string",
+          "title": "The Description Schema",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "nav_bar": {
+      "$id": "#/properties/nav_bar",
+      "type": "object",
+      "title": "The Nav_bar Schema",
+      "required": [
+        "title",
+        "sign_in"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/nav_bar/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Start Bootstrap"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sign_in": {
+          "$id": "#/properties/nav_bar/properties/sign_in",
+          "type": "string",
+          "title": "The Sign_in Schema",
+          "default": "",
+          "examples": [
+            "Sign In"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "masthead": {
+      "$id": "#/properties/masthead",
+      "type": "object",
+      "title": "The Masthead Schema",
+      "required": [
+        "img",
+        "title",
+        "email_text",
+        "submit_btn"
+      ],
+      "properties": {
+        "img": {
+          "$id": "#/properties/masthead/properties/img",
+          "type": "string",
+          "title": "The Img Schema",
+          "default": "",
+          "examples": [
+            "landing_template/img/bg-masthead.jpg"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "title": {
+          "$id": "#/properties/masthead/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Build a landing page for your business or project and generate more leads!"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "email_text": {
+          "$id": "#/properties/masthead/properties/email_text",
+          "type": "string",
+          "title": "The Email_text Schema",
+          "default": "",
+          "examples": [
+            "Enter your email..."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "submit_btn": {
+          "$id": "#/properties/masthead/properties/submit_btn",
+          "type": "string",
+          "title": "The Submit_btn Schema",
+          "default": "",
+          "examples": [
+            "Sign up!"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "features": {
+      "$id": "#/properties/features",
+      "type": "array",
+      "title": "The Features Schema",
+      "items": {
+        "$id": "#/properties/features/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "title",
+          "description",
+          "icon"
+        ],
+        "properties": {
+          "title": {
+            "$id": "#/properties/features/items/properties/title",
+            "type": "string",
+            "title": "The Title Schema",
+            "default": "",
+            "examples": [
+              "Fully Responsive"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "description": {
+            "$id": "#/properties/features/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema",
+            "default": "",
+            "examples": [
+              "This theme will look great on any device, no matter the size!"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "icon": {
+            "$id": "#/properties/features/items/properties/icon",
+            "type": "string",
+            "title": "The Icon Schema",
+            "default": "",
+            "examples": [
+              "icon-screen-desktop"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "showcase": {
+      "$id": "#/properties/showcase",
+      "type": "array",
+      "title": "The Showcase Schema",
+      "items": {
+        "$id": "#/properties/showcase/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "class",
+          "img",
+          "title",
+          "description"
+        ],
+        "properties": {
+          "class": {
+            "$id": "#/properties/showcase/items/properties/class",
+            "type": "string",
+            "title": "The Class Schema",
+            "default": "",
+            "examples": [
+              "col-lg-6 order-lg-2 text-white showcase-img"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "img": {
+            "$id": "#/properties/showcase/items/properties/img",
+            "type": "string",
+            "title": "The Img Schema",
+            "default": "",
+            "examples": [
+              "landing_template/img/bg-showcase-1.jpg"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "title": {
+            "$id": "#/properties/showcase/items/properties/title",
+            "type": "string",
+            "title": "The Title Schema",
+            "default": "",
+            "examples": [
+              "Fully Responsive Design"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "description": {
+            "$id": "#/properties/showcase/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema",
+            "default": "",
+            "examples": [
+              "When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "testimonial_title": {
+      "$id": "#/properties/testimonial_title",
+      "type": "string",
+      "title": "The Testimonial_title Schema",
+      "default": "",
+      "examples": [
+        "What people are saying..."
+      ],
+      "pattern": "^(.*)$"
+    },
+    "testimonials": {
+      "$id": "#/properties/testimonials",
+      "type": "array",
+      "title": "The Testimonials Schema",
+      "items": {
+        "$id": "#/properties/testimonials/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "img",
+          "name",
+          "quote"
+        ],
+        "properties": {
+          "img": {
+            "$id": "#/properties/testimonials/items/properties/img",
+            "type": "string",
+            "title": "The Img Schema",
+            "default": "",
+            "examples": [
+              "landing_template/img/testimonials-1.jpg"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "name": {
+            "$id": "#/properties/testimonials/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "Margaret E."
+            ],
+            "pattern": "^(.*)$"
+          },
+          "quote": {
+            "$id": "#/properties/testimonials/items/properties/quote",
+            "type": "string",
+            "title": "The Quote Schema",
+            "default": "",
+            "examples": [
+              "\"This is fantastic! Thanks so much guys!\""
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "call_to_action": {
+      "$id": "#/properties/call_to_action",
+      "type": "object",
+      "title": "The Call_to_action Schema",
+      "required": [
+        "img",
+        "title",
+        "email_text",
+        "submit_btn"
+      ],
+      "properties": {
+        "img": {
+          "$id": "#/properties/call_to_action/properties/img",
+          "type": "string",
+          "title": "The Img Schema",
+          "default": "",
+          "examples": [
+            "landing_template/img/bg-masthead.jpg"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "title": {
+          "$id": "#/properties/call_to_action/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Ready to get started? Sign up now!"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "email_text": {
+          "$id": "#/properties/call_to_action/properties/email_text",
+          "type": "string",
+          "title": "The Email_text Schema",
+          "default": "",
+          "examples": [
+            "Enter your email..."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "submit_btn": {
+          "$id": "#/properties/call_to_action/properties/submit_btn",
+          "type": "string",
+          "title": "The Submit_btn Schema",
+          "default": "",
+          "examples": [
+            "Sign up!"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "footer": {
+      "$id": "#/properties/footer",
+      "type": "array",
+      "title": "The Footer Schema",
+      "items": {
+        "$id": "#/properties/footer/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "name",
+          "href"
+        ],
+        "properties": {
+          "name": {
+            "$id": "#/properties/footer/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "About"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "href": {
+            "$id": "#/properties/footer/items/properties/href",
+            "type": "string",
+            "title": "The Href Schema",
+            "default": "",
+            "examples": [
+              "#"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "footer_text": {
+      "$id": "#/properties/footer_text",
+      "type": "string",
+      "title": "The Footer_text Schema",
+      "default": "",
+      "examples": [
+        "© Your Website 2019. All Rights Reserved."
+      ],
+      "pattern": "^(.*)$"
+    },
+    "footer_icons": {
+      "$id": "#/properties/footer_icons",
+      "type": "array",
+      "title": "The Footer_icons Schema",
+      "items": {
+        "$id": "#/properties/footer_icons/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "name",
+          "href"
+        ],
+        "properties": {
+          "name": {
+            "$id": "#/properties/footer_icons/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "fa-facebook"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "href": {
+            "$id": "#/properties/footer_icons/items/properties/href",
+            "type": "string",
+            "title": "The Href Schema",
+            "default": "",
+            "examples": [
+              "#"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}
