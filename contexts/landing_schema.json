@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "DjangoTemplates-Landing/contexts/landing_schema.json",
   "type": "object",
-  "title": "The Root Schema",
+  "title": "Landing Page",
   "required": [
     "page",
     "nav_bar",
@@ -21,7 +21,7 @@
     "page": {
       "$id": "#/properties/page",
       "type": "object",
-      "title": "The Page Schema",
+      "title": "Page Details",
       "required": [
         "title",
         "author",
@@ -31,7 +31,7 @@
         "title": {
           "$id": "#/properties/page/properties/title",
           "type": "string",
-          "title": "The Title Schema",
+          "title": "Page Title",
           "default": "",
           "examples": [
             "Landing Page - Start Bootstrap Theme"
@@ -41,7 +41,7 @@
         "author": {
           "$id": "#/properties/page/properties/author",
           "type": "string",
-          "title": "The Author Schema",
+          "title": "Page Author",
           "default": "",
           "examples": [
             ""
@@ -51,7 +51,7 @@
         "description": {
           "$id": "#/properties/page/properties/description",
           "type": "string",
-          "title": "The Description Schema",
+          "title": "Page Description",
           "default": "",
           "examples": [
             ""
@@ -63,7 +63,7 @@
     "nav_bar": {
       "$id": "#/properties/nav_bar",
       "type": "object",
-      "title": "The Nav_bar Schema",
+      "title": "Navigation Bar",
       "required": [
         "title",
         "sign_in"
@@ -72,7 +72,7 @@
         "title": {
           "$id": "#/properties/nav_bar/properties/title",
           "type": "string",
-          "title": "The Title Schema",
+          "title": "Navbar Title",
           "default": "",
           "examples": [
             "Start Bootstrap"
@@ -82,7 +82,7 @@
         "sign_in": {
           "$id": "#/properties/nav_bar/properties/sign_in",
           "type": "string",
-          "title": "The Sign_in Schema",
+          "title": "Navbar Sign-in Button Text",
           "default": "",
           "examples": [
             "Sign In"
@@ -94,7 +94,7 @@
     "masthead": {
       "$id": "#/properties/masthead",
       "type": "object",
-      "title": "The Masthead Schema",
+      "title": "Masthead",
       "required": [
         "img",
         "title",
@@ -105,7 +105,7 @@
         "img": {
           "$id": "#/properties/masthead/properties/img",
           "type": "string",
-          "title": "The Img Schema",
+          "title": "Background Image",
           "default": "",
           "examples": [
             "landing_template/img/bg-masthead.jpg"
@@ -115,7 +115,7 @@
         "title": {
           "$id": "#/properties/masthead/properties/title",
           "type": "string",
-          "title": "The Title Schema",
+          "title": "Title of Masthead",
           "default": "",
           "examples": [
             "Build a landing page for your business or project and generate more leads!"
@@ -125,7 +125,7 @@
         "email_text": {
           "$id": "#/properties/masthead/properties/email_text",
           "type": "string",
-          "title": "The Email_text Schema",
+          "title": "Email TextBox Text",
           "default": "",
           "examples": [
             "Enter your email..."
@@ -135,7 +135,7 @@
         "submit_btn": {
           "$id": "#/properties/masthead/properties/submit_btn",
           "type": "string",
-          "title": "The Submit_btn Schema",
+          "title": "Submit Button Text",
           "default": "",
           "examples": [
             "Sign up!"
@@ -147,11 +147,11 @@
     "features": {
       "$id": "#/properties/features",
       "type": "array",
-      "title": "The Features Schema",
+      "title": "Features Section",
       "items": {
         "$id": "#/properties/features/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Feature Item",
         "required": [
           "title",
           "description",
@@ -161,7 +161,7 @@
           "title": {
             "$id": "#/properties/features/items/properties/title",
             "type": "string",
-            "title": "The Title Schema",
+            "title": "Feature Name",
             "default": "",
             "examples": [
               "Fully Responsive"
@@ -171,7 +171,7 @@
           "description": {
             "$id": "#/properties/features/items/properties/description",
             "type": "string",
-            "title": "The Description Schema",
+            "title": "Feature Description",
             "default": "",
             "examples": [
               "This theme will look great on any device, no matter the size!"
@@ -181,7 +181,7 @@
           "icon": {
             "$id": "#/properties/features/items/properties/icon",
             "type": "string",
-            "title": "The Icon Schema",
+            "title": "Feature Icon",
             "default": "",
             "examples": [
               "icon-screen-desktop"
@@ -194,11 +194,11 @@
     "showcase": {
       "$id": "#/properties/showcase",
       "type": "array",
-      "title": "The Showcase Schema",
+      "title": "Showcase Section",
       "items": {
         "$id": "#/properties/showcase/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Showcase Item",
         "required": [
           "class",
           "img",
@@ -209,7 +209,7 @@
           "class": {
             "$id": "#/properties/showcase/items/properties/class",
             "type": "string",
-            "title": "The Class Schema",
+            "title": "Showcase Class (CSS)",
             "default": "",
             "examples": [
               "col-lg-6 order-lg-2 text-white showcase-img"
@@ -219,7 +219,7 @@
           "img": {
             "$id": "#/properties/showcase/items/properties/img",
             "type": "string",
-            "title": "The Img Schema",
+            "title": "Showcase Image",
             "default": "",
             "examples": [
               "landing_template/img/bg-showcase-1.jpg"
@@ -229,7 +229,7 @@
           "title": {
             "$id": "#/properties/showcase/items/properties/title",
             "type": "string",
-            "title": "The Title Schema",
+            "title": "Showcase Title",
             "default": "",
             "examples": [
               "Fully Responsive Design"
@@ -239,7 +239,7 @@
           "description": {
             "$id": "#/properties/showcase/items/properties/description",
             "type": "string",
-            "title": "The Description Schema",
+            "title": "Showcase Description",
             "default": "",
             "examples": [
               "When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!"
@@ -252,7 +252,7 @@
     "testimonial_title": {
       "$id": "#/properties/testimonial_title",
       "type": "string",
-      "title": "The Testimonial_title Schema",
+      "title": "Testimonial Section Title",
       "default": "",
       "examples": [
         "What people are saying..."
@@ -262,11 +262,11 @@
     "testimonials": {
       "$id": "#/properties/testimonials",
       "type": "array",
-      "title": "The Testimonials Schema",
+      "title": "Testimonial Section",
       "items": {
         "$id": "#/properties/testimonials/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Testimonials",
         "required": [
           "img",
           "name",
@@ -276,7 +276,7 @@
           "img": {
             "$id": "#/properties/testimonials/items/properties/img",
             "type": "string",
-            "title": "The Img Schema",
+            "title": "Testimonial Profile Picture",
             "default": "",
             "examples": [
               "landing_template/img/testimonials-1.jpg"
@@ -286,7 +286,7 @@
           "name": {
             "$id": "#/properties/testimonials/items/properties/name",
             "type": "string",
-            "title": "The Name Schema",
+            "title": "Testimonial Name",
             "default": "",
             "examples": [
               "Margaret E."
@@ -296,7 +296,7 @@
           "quote": {
             "$id": "#/properties/testimonials/items/properties/quote",
             "type": "string",
-            "title": "The Quote Schema",
+            "title": "Testimonial Quote",
             "default": "",
             "examples": [
               "\"This is fantastic! Thanks so much guys!\""
@@ -309,7 +309,7 @@
     "call_to_action": {
       "$id": "#/properties/call_to_action",
       "type": "object",
-      "title": "The Call_to_action Schema",
+      "title": "Call to Action Section",
       "required": [
         "img",
         "title",
@@ -320,7 +320,7 @@
         "img": {
           "$id": "#/properties/call_to_action/properties/img",
           "type": "string",
-          "title": "The Img Schema",
+          "title": "Background Image",
           "default": "",
           "examples": [
             "landing_template/img/bg-masthead.jpg"
@@ -330,7 +330,7 @@
         "title": {
           "$id": "#/properties/call_to_action/properties/title",
           "type": "string",
-          "title": "The Title Schema",
+          "title": "Title",
           "default": "",
           "examples": [
             "Ready to get started? Sign up now!"
@@ -340,7 +340,7 @@
         "email_text": {
           "$id": "#/properties/call_to_action/properties/email_text",
           "type": "string",
-          "title": "The Email_text Schema",
+          "title": "Email TextBox Sample Text",
           "default": "",
           "examples": [
             "Enter your email..."
@@ -350,7 +350,7 @@
         "submit_btn": {
           "$id": "#/properties/call_to_action/properties/submit_btn",
           "type": "string",
-          "title": "The Submit_btn Schema",
+          "title": "Submit Button Text",
           "default": "",
           "examples": [
             "Sign up!"
@@ -362,11 +362,11 @@
     "footer": {
       "$id": "#/properties/footer",
       "type": "array",
-      "title": "The Footer Schema",
+      "title": "Footer Section",
       "items": {
         "$id": "#/properties/footer/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Footer Item",
         "required": [
           "name",
           "href"
@@ -375,7 +375,7 @@
           "name": {
             "$id": "#/properties/footer/items/properties/name",
             "type": "string",
-            "title": "The Name Schema",
+            "title": "Item Name",
             "default": "",
             "examples": [
               "About"
@@ -385,7 +385,7 @@
           "href": {
             "$id": "#/properties/footer/items/properties/href",
             "type": "string",
-            "title": "The Href Schema",
+            "title": "Item Link",
             "default": "",
             "examples": [
               "#"
@@ -398,7 +398,7 @@
     "footer_text": {
       "$id": "#/properties/footer_text",
       "type": "string",
-      "title": "The Footer_text Schema",
+      "title": "Footer Section Text",
       "default": "",
       "examples": [
         "© Your Website 2019. All Rights Reserved."
@@ -408,11 +408,11 @@
     "footer_icons": {
       "$id": "#/properties/footer_icons",
       "type": "array",
-      "title": "The Footer_icons Schema",
+      "title": "Footer Section Icons",
       "items": {
         "$id": "#/properties/footer_icons/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Icons",
         "required": [
           "name",
           "href"
@@ -421,7 +421,7 @@
           "name": {
             "$id": "#/properties/footer_icons/items/properties/name",
             "type": "string",
-            "title": "The Name Schema",
+            "title": "Icon Code",
             "default": "",
             "examples": [
               "fa-facebook"
@@ -431,7 +431,7 @@
           "href": {
             "$id": "#/properties/footer_icons/items/properties/href",
             "type": "string",
-            "title": "The Href Schema",
+            "title": "Icon Link",
             "default": "",
             "examples": [
               "#"
