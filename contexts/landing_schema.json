@@ -220,7 +220,7 @@
             "$id": "#/properties/showcase/items/properties/class",
             "type": "string",
             "title": "Showcase Class (CSS)",
-            "default": "",
+            "default": "col-lg-6 order-lg-2 text-white showcase-img",
             "examples": [
               "col-lg-6 order-lg-2 text-white showcase-img"
             ],
@@ -230,7 +230,11 @@
             "$id": "#/properties/showcase/items/properties/img",
             "type": "string",
             "title": "Showcase Image",
-            "default": "",
+            "default": "landing_template/img/bg-showcase-1.jpg",
+            "media": {
+                "binaryEncoding": "base64",
+                "type": "img/png"
+            },
             "examples": [
               "landing_template/img/bg-showcase-1.jpg"
             ],
@@ -287,7 +291,11 @@
             "$id": "#/properties/testimonials/items/properties/img",
             "type": "string",
             "title": "Testimonial Profile Picture",
-            "default": "",
+            "default": "landing_template/img/testimonials-1.jpg",
+            "media": {
+                "binaryEncoding": "base64",
+                "type": "img/png"
+            },
             "examples": [
               "landing_template/img/testimonials-1.jpg"
             ],
@@ -332,6 +340,10 @@
           "type": "string",
           "title": "Background Image",
           "default": "",
+          "media": {
+              "binaryEncoding": "base64",
+              "type": "img/png"
+          },
           "examples": [
             "landing_template/img/bg-masthead.jpg"
           ],
@@ -352,6 +364,7 @@
           "type": "string",
           "title": "Email TextBox Sample Text",
           "default": "",
+          "format": "email",
           "examples": [
             "Enter your email..."
           ],
@@ -397,6 +410,7 @@
             "type": "string",
             "title": "Item Link",
             "default": "",
+            "format": "url",
             "examples": [
               "#"
             ],
@@ -443,6 +457,7 @@
             "type": "string",
             "title": "Icon Link",
             "default": "",
+            "format": "url",
             "examples": [
               "#"
             ],
